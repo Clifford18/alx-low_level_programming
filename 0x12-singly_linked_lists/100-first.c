@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-// Declare a function called "beforeMain" as a constructor.
-void beforeMain(void) __attribute__ ((constructor));
+void print_before_main(void) __attribute__ ((constructor));
 
 /**
- * beforeMain - A function executed before the main function.
- *
- * This function prints a message to the console before the main function is executed.
+ * print_before_main - A constructor function that prints a message before main.
  */
-void beforeMain(void)
+void print_before_main(void)
 {
-    printf("Before the main function: You carry your home on your back!\n");
+    printf("Preparing to enter the realm of main function.\n");
+    printf("Carrying my abode upon my dorsal expanse!\n");
 }

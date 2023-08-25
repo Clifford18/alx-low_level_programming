@@ -1,7 +1,5 @@
-section .data
     format db 'Hello, World!',0
 
-section .text
     global main
     extern printf
 

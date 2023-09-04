@@ -247,7 +247,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  * close_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
  *
- * Description: If the file cannot be closed - exit code 98.
+ * Description: If the file cannot be closed - exit code 98
  */
 void close_elf(int elf)
 {
@@ -262,14 +262,15 @@ void close_elf(int elf)
 /**
  * main - Displays information contained in
  * ELF header at start of ELF file.
- * @argc: Number of args supplied to  program.
+ * @argc: Number of args supplied to program.
  * @argv: ArrayPointers to the args.
  *
  * Return: 0 for success.
  *
- * Description: If file isn't ELF File ||
+ * Description: If file isn't ELF File
  * the function fails - exit code =  98.
  */
+
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
